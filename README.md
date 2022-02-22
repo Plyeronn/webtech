@@ -27,3 +27,8 @@ See [Configuration Reference](https://cli.vuejs.org/config/).
 ```
 export NODE_OPTIONS=--openssl-legacy-provider
 ```
+
+### Project-Development activate 
+```
+nodemon run lint
+```
