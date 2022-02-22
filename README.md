@@ -30,5 +30,5 @@ export NODE_OPTIONS=--openssl-legacy-provider
 
 ### Project-Development activate 
 ```
-nodemon run lint
+nodemon run serve
 ```
