@@ -1,6 +1,7 @@
 <template>
   <!-- TODO: implement me -->
-  <div class="card">
+  <div class="card bg-dark rounded mt-2 border border-secondary">
+  
     <div class="card-body">
       <div id="book">
         <img id="book-image" :src="imgsrc" class="img-fluid rounded" alt="" />
@@ -45,3 +46,7 @@ export default {
   },
 };
 </script>
+
+<style>
+
+</style>

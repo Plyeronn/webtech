@@ -6,8 +6,10 @@
         <nav-bar :tests-open="testing" @toggle-tests="toggleTests"> </nav-bar>
       </div>
     </div>
-    <div class="row mt-2">
-      <work-space :bookdata="dataToShow"></work-space>
+    <div class="row">
+      <div class="col">
+        <work-space-app :bookdata="dataToShow"></work-space-app>
+      </div>
     </div>
   </div>
 </template>
@@ -15,7 +17,7 @@
 <script>
 import NavBar from "./components/NavBar.vue";
 import Tests from "./components/Tests.vue";
-import WorkSpace from "./components/WorkSpace.vue";
+import WorkSpaceApp from "./components/WorkSpaceApp.vue";
 import axios from "axios";
 import books from "../server/books.json";
 
@@ -26,7 +28,7 @@ export default {
   components: {
     NavBar,
     Tests,
-    WorkSpace,
+    WorkSpaceApp,
   },
   data() {
     return {
@@ -58,5 +60,6 @@ export default {
 
 <style>
 @import "~bootstrap/dist/css/bootstrap.css";
-@import "./styles/styles.css";
+@import "./styles/app.css";
 </style>
+<!-- MAKE MORE DISTANCE BETWEEN NAV BAR AND BOOKVIEW -->
