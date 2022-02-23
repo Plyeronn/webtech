@@ -30,5 +30,5 @@ export NODE_OPTIONS=--openssl-legacy-provider
 
 ### Project-Development activate 
 ```
-nodemon run serve
+nodemon run serve --delay 500ms express.js --delay 1000ms server.js
 ```

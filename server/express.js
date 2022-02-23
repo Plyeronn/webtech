@@ -1,7 +1,10 @@
 let books = require("./books.json");
 const express = require("express");
 const app = express();
-const port = 8001;
+
+const config = require("../config")
+const port = config.expressPort;
+
 
 books = books.sort((a, b) => a.title.localeCompare(b.title));
 

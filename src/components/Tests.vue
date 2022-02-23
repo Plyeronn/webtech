@@ -47,8 +47,13 @@
 <script>
 // test-specific imports, constants, variables, and functions
 import axios from 'axios';
-const serverUrl = 'http://localhost:8000';
-const expressUrl = 'http://localhost:8001';
+// import serverUrl from '../../config.js'
+// import expressUrl from '../../config.js'
+const config = require("../../config.js")
+const serverUrl = config.serverUrl
+const expressUrl = config.expressUrl
+// const serverUrl = 'http://localhost:8040';
+// const expressUrl = 'http://localhost:8041';
 const testBook = {
   "isbn13": 9780393316049,
   "isbn10": "0393316041",

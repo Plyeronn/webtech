@@ -1,5 +1,6 @@
 const http = require("http");
-const port = 8000;
+const config = require("../config")
+const port = config.serverPort;
 const url = require("url");
 const qs = require("querystring");
 const path = require("path");
